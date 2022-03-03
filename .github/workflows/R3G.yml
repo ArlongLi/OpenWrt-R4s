@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/r3g.config
+  CONFIG_FILE: config/R3G.config
   DIY_P1_SH: diyScript/diy-part1-r3g.sh
   DIY_P2_SH: diyScript/diy-part2-r3g.sh
   UPLOAD_BIN_DIR: false
