@@ -69,7 +69,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: git tag
-      run: cd x-wrrt && git checkout -f $(git describe --tags $(git rev-list --tags --max-count=1))
+      run: cd openwrt && git checkout -f $(git describe --tags $(git rev-list --tags --max-count=1))
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
