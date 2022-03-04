@@ -60,6 +60,8 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+    - name: git tag
+      run: cd openwrt && git checkout -f $(git describe --tags $(git rev-list --tags --max-count=1))
 
     - name: Load custom feeds
       run: |
@@ -68,8 +70,7 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
-    - name: git tag
-      run: cd openwrt && git checkout -f $(git describe --tags $(git rev-list --tags --max-count=1))
+
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
