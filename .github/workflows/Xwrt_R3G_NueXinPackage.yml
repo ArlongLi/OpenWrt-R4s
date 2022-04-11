@@ -23,7 +23,7 @@ env:
   REPO_URL: https://github.com/x-wrt/x-wrt.git
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: xwrtR3G.config
+  CONFIG_FILE: config/xwrtR3G.config
   DIY_P1_SH: diyScript/xwrt-diy1.sh
   DIY_P2_SH: diyScript/xwrt-diy2.sh
   UPLOAD_BIN_DIR: false
