@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Xwrt R3G NueXinPackage
+name: Xwrt R4s NueXinPackage
 
 on:
   repository_dispatch:
